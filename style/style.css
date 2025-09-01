@@ -1,0 +1,336 @@
+/*
+rgb(230, 224, 208);
+rgb(89, 56, 27);
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+body {
+  line-height: 1.5;
+  color: #333;
+  background-color: rgb(230, 224, 208);
+}
+
+/* cabeca */
+.cabeca {
+  width: 100%;
+  background-color: #2c2c2c;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.cabeca .itens_cabeca {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #d4a373;
+}
+.logo img {
+  height: 40px;
+  width: auto;
+  border-radius: 50%;
+}
+
+/* navegacao */
+.navegacao ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.navegacao ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.navegacao ul li a:hover {
+  background-color: #d4a373;
+  color: #2c2c2c;
+}
+
+/* Botão do zap */
+.botao_zap {
+  background-color: #25D366;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.botao_zap:hover {
+  background-color: #1ebe57;
+  transform: scale(1.05);
+}
+
+/*teste pra celular */
+.cel_teste {
+  display: none;
+  font-size: 1.8rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* teste de responsividade */
+@media (max-width: 768px) {
+  .navegacao {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: #2c2c2c;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  }
+
+  .navegacao ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .navegacao ul li a {
+    display: block;
+    padding: 1rem;
+  }
+
+  .cel_teste {
+    display: block;
+  }
+}
+    
+    .inicio {
+  background-color: #2c2c2c;
+  color: #fff;
+  padding: 5rem 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inicio h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.inicio p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #dcd6d1;
+}
+
+.inicio_caixas{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Botão de agendar atendimento) */
+.caixa_agendar {
+  background-color: #d4a373;
+  color: #2c2c2c;
+  padding: 0.8rem 1.8rem;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.caixa_agendar:hover {
+  background-color: #fff;
+  color: #2c2c2c;
+  transform: translateY(-2px);
+}
+.caixa_servicos {
+  background-color: transparent;
+  color: #d4a373;
+  border: 2px solid #d4a373;
+  padding: 0.8rem 1.8rem;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.caixa_servicos:hover {
+  background-color: #d4a373;
+  color: #2c2c2c;
+  transform: translateY(-2px);
+}
+
+/* Sobre */
+.sobre {
+  background-color: #ffffff;
+  color: #2c2c2c;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+.sobre h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #d4a373;
+}
+.sobre p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sobre-caixas {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.sobre_caixa{
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0);
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.sobre_caixa:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.sobre_caixa h3 {
+  color: #2c2c2c;
+  margin-bottom: 0.5rem;
+}
+.sobre_caixa p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.servicos {
+  background-color: #fff;
+  padding: 5rem 2rem;
+  text-align: center;
+  color: #2c2c2c;
+}
+
+.servicos h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: #d4a373;
+}
+
+.servicos-caixas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.caixa_servico {
+  background-color: #f5f2ef;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.caixa_servico:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
+}
+
+.caixa_servico h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.caixa_servico ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.caixa_servico ul li {
+  margin-bottom: 0.6rem;
+  padding-left: 1.2rem;
+  position: relative;
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.caixa_servico ul li::before {
+  content: "•";
+  color: #d4a373;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.localizacao {
+  background-color: #2c2c2c;
+  color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.localizacao h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #d4a373;
+}
+
+.caixa_infos {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.caixa_infos p {
+  margin: 0.5rem 0;
+}
+
+/* Botão */
+.localizacao-btn .caixa_agendar {
+  background-color: #25D366; /* verde do zaaaap */
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.localizacao-btn .caixa_agendar:hover {
+  background-color: #1ebe57;
+  transform: scale(1.05);
+}
+
