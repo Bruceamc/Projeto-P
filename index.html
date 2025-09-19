@@ -5,51 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="icon" href="imagens/logo-brandao.jpg" type="icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <title>Luthieria</title>
 </head>
 <body>
-<header class="cabeca">
-  <div class="itens_cabeca">
-    <!-- Logo -->
-    <a href="#" class="logo">
-      <img src="imagens/logo-brandao.jpg" alt="Logo Brandão Luthieria">
-      <span>Brandão Luthieria</span>
-    </a>
+  <header class="cabeca">
+    <div class="itens_cabeca">
+      <!-- Logo -->
+      <a href="#" class="logo">
+        <span>Brandão Luthieria</span>
+      </a>
+      <!-- Navegação -->
+      <nav class="navegacao">
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#atendimento">atendimento</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#contato">Suporte</a></li>
+        </ul>
+      </nav>
+    
+      <!-- Botão do Zapzap -->
+      <a href="https://wa.me/5511933433449?text=Oi!%20%F0%9F%91%8B%20Quero%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Brand%C3%A3o%20Luthieria.%20Meu%20instrumento%20precisa%20de%20um%20cuidado%20especial.%20%F0%9F%8E%B6" target="_blank" class="botao_zap1"><img src="imagens/whatsapp.png" alt=""> WhatsApp</a>
 
-    <!-- Navegação -->
-    <nav class="navegacao">
-      <ul>
-        <li><a href="#">Início</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#portfolio">Portfólio</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
+      <!-- Teste em celular kkkk -->
+      <div class="cel_teste">=</div>
+    </div>
+  </header>
 
-    <!-- Botão do Zapzap -->
-    <a href="" target="_blank" class="botao_zap">📲 WhatsApp</a>
-
-    <!-- Teste em celular kkkk -->
-    <div class="cel_teste">=</div>
+  <div class="marca">
+    <img src="imagens/logo-brandao.jpg" alt="Brandão Luthieria Logo">
   </div>
-</header>
 
-  <section class="inicio">
-  <div class="inicio_caixa">
-    <h1>Manutenção e Regulagem de Instrumentos de Corda em São Paulo</h1>
-    <p>Profissionalismo, cuidado e som de qualidade para seu instrumento.</p>
-    <div class="inicio_caixas">
-      <a href="#agendar" class="caixa_agendar">Agendar Atendimento</a>
-      <a href="#servicos" class="caixa_servicos">Ver Serviços</a>
+  <div class="inicio">
+    <div class="inicio_caixa">
+      <h1>Manutenção e Regulagem de Instrumentos de Corda em São Paulo</h1>
+      <p>Profissionalismo, cuidado e som de qualidade para seu instrumento.</p>
+      <div class="inicio_caixas">
+        <a href="#agendar" class="caixa_agendar">Agendar Atendimento</a>
+        <a href="#servicos" class="caixa_servicos">Ver Serviços</a>
+      </div>
     </div>
   </div>
-</section>
 
-<section class="sobre">
+  <div class="sobre" id="sobre">
     <h2>Sobre Hugo Brandão</h2>
     <p>Sou Hugo Brandão, luthier especializado em regulagem, manutenção e pequenos reparos em instrumentos de corda. Atendo músicos exigentes que buscam timbre, conforto e performance de alto nível. Com experiência, precisão e atenção aos detalhes, ofereço um serviço sob medida para violões, guitarras, baixos e outros instrumentos acústicos ou elétricos.</p>
-
     <div class="sobre-caixas">
       <div class="sobre_caixa">
         <h3>Experiência Profissional</h3>
@@ -61,139 +67,226 @@
       </div>
     </div>
   </div>
-</section>
 
-<section class="servicos">
-  <div class="servicos-caixa">
-    <h2>Serviços Oferecidos</h2>
+  <!-- Serviços -->
+  <div class="servicos" id="servicos">
+    <div class="servicos-caixa">
+      <h2>Serviços Oferecidos</h2>
+      <div class="servicos-caixas">
+        <!-- Regulagem e Ajustes -->
+          <div class="caixa_servico">
+            <h3>🎸 Regulagem e Ajustes</h3>
+            <ul>
+              <li><p>Regulagem completa (altura de cordas, tensor, oitavas, retífica de trastes, altura de captadores)</p></li>
+              <li><p>Troca de cordas com limpeza</p></li>
+            </ul>
+          </div>
 
-    <div class="servicos-caixas">
-      <!-- Regulagem e Ajustes -->
-      <div class="caixa_servico">
-        <h3>🎸 Regulagem e Ajustes</h3>
-        <ul>
-          <li>Regulagem completa (altura de cordas, tensor, oitavas, retífica de trastes, altura de captadores)</li>
-          <li>Troca de cordas com limpeza</li>
-        </ul>
+          <!-- Elétrica -->
+          <div class="caixa_servico">
+            <h3>⚡ Elétrica</h3>
+            <ul>
+              <li><p>Troca e instalação de captadores</p></li>
+              <li><p>Instalação ou substituição de potenciômetros, chave seletora e jack</p></li>
+              <li><p>Blindagem contra ruído</p></li>
+              <li><p>Revisão elétrica completa</p></li>
+              <li><p>Instalação de push-pull, coil split, killswitch</p></li>
+            </ul>
+          </div>
+
+          <!-- Reparos Estruturais -->
+          <div class="caixa_servico">
+            <h3>🔧 Reparos Estruturais</h3>
+            <ul>
+              <li><p>Colagem de braço (headstock quebrado, braço solto)</p></li>
+              <li><p>Reparos em corpo (rachaduras, lascas)</p></li>
+              <li><p>Troca ou reparo de pestana e cavalete</p></li>
+              <li><p>Troca de trastes</p></li>
+            </ul>
+          </div>
+
+          <!-- Pintura e Acabamento -->
+          <div class="caixa_servico">
+            <h3>🎨 Pintura e Acabamento</h3>
+            <ul>
+              <li><p>Pintura personalizada e retoques</p></li>
+              <li><p>Instalação de escudo, tarraxas com trava, strap locks</p></li>
+            </ul>
+          </div>
       </div>
-
-      <!-- Elétrica -->
-      <div class="caixa_servico">
-        <h3>⚡ Elétrica</h3>
-        <ul>
-          <li>Troca e instalação de captadores</li>
-          <li>Instalação ou substituição de potenciômetros, chave seletora e jack</li>
-          <li>Blindagem contra ruído</li>
-          <li>Revisão elétrica completa</li>
-          <li>Instalação de push-pull, coil split, killswitch</li>
-        </ul>
-      </div>
-
-      <!-- Reparos Estruturais -->
-      <div class="caixa_servico">
-        <h3>🔧 Reparos Estruturais</h3>
-        <ul>
-          <li>Colagem de braço (headstock quebrado, braço solto)</li>
-          <li>Reparos em corpo (rachaduras, lascas)</li>
-          <li>Troca ou reparo de pestana e cavalete</li>
-          <li>Troca de trastes</li>
-        </ul>
-      </div>
-
-      <!-- Pintura e Acabamento -->
-      <div class="caixa_servico">
-        <h3>🎨 Pintura e Acabamento</h3>
-        <ul>
-          <li>Pintura personalizada e retoques</li>
-          <li>Instalação de escudo, tarraxas com trava, strap locks</li>
-        </ul>
-      </div>
-    </div>
-      <a href="#contato" class="botao_zap">Solicitar Orçamento</a>
+      <a href="https://wa.me/5511933433449?text=Oi!%20%F0%9F%91%8B%20Quero%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Brand%C3%A3o%20Luthieria.%20Meu%20instrumento%20precisa%20de%20um%20cuidado%20especial.%20%F0%9F%8E%B6" target="_blank" class="botao_zap2">Solicitar Orçamento</a>
     </div>
   </div>
-</section>
 
-<!--Opa-->
-<section class="atendimento">
-  <div class="atendimento-container">
-    
-    <!-- Informações de Localização -->
-    <div class="atendimento-info">
-      <h2>📍 Atendimento & Localização</h2>
-      <p><strong>Chácara Santo Antônio</strong></p>
-      <p>Rua Américo Brasiliense, São Paulo - SP</p>
-      <p>⏰ Atendimento com horário marcado</p>
-      <p>🔒 Local seguro e de fácil acesso</p>
-    </div>
+  <!-- Atendimento -->
+  <div class="atendimento" id="atendimento">
+    <div class="atendimento-caixas">
+      
+      <!-- Informações de Localização -->
+      <div class="info-atendimento">
+        <h2>📍 Atendimento & Localização</h2>
+        <p><strong>Chácara Santo Antônio</strong></p>
+        <p>Rua Américo Brasiliense, São Paulo - SP</p>
+        <p>⏰ Atendimento com horário marcado</p>
+        <p>🔒 Local seguro e de fácil acesso</p>
+      </div>
 
-    <!-- Call to Action WhatsApp -->
-    <div class="atendimento-cta">
-      <h2>🎶 Seu instrumento merece o melhor!</h2>
-      <p>Clique no botão abaixo e fale direto comigo no WhatsApp.</p>
+      <!-- WhatsApp -->
+      <div class="contato-atendimento">
+        <h2>🎶 Seu instrumento merece o melhor!</h2>
+        <p>Clique no botão abaixo e fale direto comigo no WhatsApp.</p>
 
-      <a href="https://wa.me/5511933433449" target="_blank" class="botao-zap-2">
-        📲 Agendar Atendimento
-      </a>
-
-      <div class="botao-contato">
-        <p><strong>📞 (11) 93343-3449</strong></p>
-        <p>✅ WhatsApp disponível</p>
+        <a href="https://wa.me/5511933433449?text=Oi!%20%F0%9F%91%8B%20Quero%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Brand%C3%A3o%20Luthieria.%20Meu%20instrumento%20precisa%20de%20um%20cuidado%20especial.%20%F0%9F%8E%B6" target="_blank" class="botao-zap-2">📲 Agendar Atendimento</a>
+        <div class="botao-contato">
+          <p><strong>📞 (11) 93343-3449</strong></p>
+          <p>✅ WhatsApp disponível</p>
+        </div>
       </div>
     </div>
   </div>
-</section>
 
-<footer class="footer">
-  <div class="footer-caixa">
-    
-    <!-- Identidade -->
-    <div class="footer-brand">
-      <img src="imagens/logo-brandao.jpg" alt="#">
-      <h3>Brandão Luthieria</h3>
-      <p>Manutenção e regulagem de instrumentos de corda em São Paulo</p>
+  <div class="trabalho">
+    <h2>Conheça os meus trabalhos</h2>
+    <div class="trabalho-blocos">
+      
+      <div class="trabalho-bloco">
+        <img src="imagens/image.png" alt="">
+        <h3>Ambiente</h3>
+        <p>Local de trabalho seguro, limpo e adaptado para atuar no reparo, revisão, limpeza e manuseio de equipamentos.</p>
+      </div>
+
+      <div class="trabalho-bloco">
+        <img src="imagens/logo-brandao.jpg" alt="">
+        <h3>TEMA</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum libero optio asperiores quod. Accusantium unde numquam provident id aspernatur error culpa repellat quidem debitis sint, magnam sequi, facere quaerat quisquam.</p>
+      </div>
+
+      <div class="trabalho-bloco">
+        <img src="imagens/logo-brandao.jpg" alt="">
+        <h3>TEMA</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum libero optio asperiores quod. Accusantium unde numquam provident id aspernatur error culpa repellat quidem debitis sint, magnam sequi, facere quaerat quisquam.</p>
+      </div>
+
+      <div class="trabalho-bloco">
+        <img src="imagens/logo-brandao.jpg" alt="">
+        <h3>TEMA</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum libero optio asperiores quod. Accusantium unde numquam provident id aspernatur error culpa repellat quidem debitis sint, magnam sequi, facere quaerat quisquam.</p>
+      </div>
+
+      <div class="trabalho-bloco">
+        <img src="imagens/logo-brandao.jpg" alt="">
+        <h3>TEMA</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum libero optio asperiores quod. Accusantium unde numquam provident id aspernatur error culpa repellat quidem debitis sint, magnam sequi, facere quaerat quisquam.</p>
+      </div>
+
+      <div class="trabalho-bloco">
+        <img src="imagens/logo-brandao.jpg" alt="">
+        <h3>TEMA</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum libero optio asperiores quod. Accusantium unde numquam provident id aspernatur error culpa repellat quidem debitis sint, magnam sequi, facere quaerat quisquam.</p>
+      </div>
+
+      <div class="trabalho-bloco">
+        <img src="imagens/logo-brandao.jpg" alt="">
+        <h3>TEMA</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum libero optio asperiores quod. Accusantium unde numquam provident id aspernatur error culpa repellat quidem debitis sint, magnam sequi, facere quaerat quisquam.</p>
+      </div>
+
+      <div class="trabalho-bloco">
+        <img src="imagens/logo-brandao.jpg" alt="">
+        <h3>TEMA</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum libero optio asperiores quod. Accusantium unde numquam provident id aspernatur error culpa repellat quidem debitis sint, magnam sequi, facere quaerat quisquam.</p>
+      </div>
+
     </div>
+</div>
 
-    <!-- Links de navegação -->
-    <div class="footer-nav">
-      <h4>Links Rápidos</h4>
+<!-- Planos de assinaturas -->
+<div class="assinaturas">
+  <h2>🎸 Planos de Manutenção – Brandão Luthieria</h2>
+
+  <div class="caixas-assinaturas">
+    <div class="assinatura essencial">
+      <h3>🟤 Essencial</h3>
       <ul>
-        <li><a href="">Início</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Serviços</a></li>
-        <li><a href="#">Portfólio</a></li>
-        <li><a href="#">Contato</a></li>
+        <li>Guitarra/Violão aço: 1 troca de cordas por mês (cordas inclusas).</li>
+        <li>Violão nylon: 1 troca de cordas a cada 2 meses (cordas inclusas).</li>
+        <li>Revisão e limpeza.</li>
       </ul>
+      <p class="destaque">💰 Guitarra/Violão aço: <strong>R$ 110/mês.</strong></p>
+      <p class="destaque">💰 Violão nylon: <strong>R$ 50/mês.</strong></p>
     </div>
 
+    <div class="assinatura premium">
+      <h3>🟡 Premium</h3>
+      <ul>
+        <li>Guitarra/Violão aço: 1 troca de cordas por mês (cordas inclusas).</li>
+        <li>Violão nylon: 1 troca de cordas a cada 2 meses (cordas inclusas).</li>
+        <li>Revisão e limpeza.</li>
+        <li>10% de desconto em serviços de regulagem e colagens.</li>
+      </ul>
+      <p class="destaque">💰 Guitarra/Violão aço: <strong>R$ 120/mês.</strong></p>
+      <p class="destaque">💰 Violão nylon: <strong>R$ 60/mês.</strong></p>
+    </div>
+
+    <div class="assinatura master">
+      <h3>🟣 Master</h3>
+      <ul>
+        <li>Guitarra/Violão aço: 1 troca de cordas por mês (cordas inclusas).</li>
+        <li>Violão nylon: 1 troca de cordas a cada 2 meses (cordas inclusas).</li>
+        <li>Revisão e limpeza rápida.</li>
+        <li>15% de desconto em serviços de regulagem e colagens.</li>
+        <li>Atendimento prioritário (fura-fila).</li>
+        <li>Brinde anual exclusivo (camiseta, chaveiro ou limpeza completa).</li>
+      </ul>
+      <p class="destaque">💰 Guitarra/Violão aço: <strong>R$ 130/mês.</strong></p>
+      <p class="destaque">💰 Violão nylon: <strong>R$ 70/mês.</strong></p>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="contato" id="contato">
+  <div class="caixas-contato">
+    <div class="logo-contato">
+      <img src="imagens/logo-brandao.jpg" alt="Logo Brandão Luthieria">
+    </div>
     <!-- Contato -->
-    <div class="footer-contato">
-      <h4>Contato</h4>
-      <p>📍 Rua Américo Brasiliense, Chácara Santo Antônio - SP</p>
-      <p>📞 (11) 93343-3449</p>
-      <p>✉️ contato@luthieriaarteecu.com</p>
-
-      <a href="https://wa.me/5511933433449" target="_blank" class="botao-zap-footer">
-        💬 Pega o Zap
-      </a>
+    <div class="caixa-contato-1">
+      <h3>Contato de suporte</h3>
+      <p>
+        <img src="imagens/telefone.png" alt="Telefone" class="icon"> 
+        <a href="">(11) 93343-3449</a>
+      </p>
+      <p>
+        <img src="imagens/email.png" alt="E-mail" class="icon"> 
+        <a href="">contato@brandao-luthieria.com</a>
+      </p>
     </div>
-
     <!-- Redes sociais -->
-    <div class="footer-social">
-      <h4>Esse CARALHO agora FUNCIONA</h4>
-      <a href="#"><img src="imagens/facebook.png" alt="Facebook"></a>
-      <a href="#"><img src="imagens/instagram.png" alt="Instagram"></a>
-      <a href="#"><img src="imagens/tiktok.webp" alt=""></a>
-      <a href="#"><img src="imagens/whatsapp.png" alt=""></a>
-      <a href="#"><img src="imagens/x.png" alt=""></a>
+    <div class="caixa-contato-2">
+      <h3>Redes Sociais</h3>
+      <p>
+        <img src="imagens/whatsapp2.png" alt="WhatsApp" class="icon">
+        <a href="https://wa.me/5511933433449?text=Oi!%20%F0%9F%91%8B%20Quero%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Brand%C3%A3o%20Luthieria.%20Meu%20instrumento%20precisa%20de%20um%20cuidado%20especial.%20%F0%9F%8E%B6" target="_blank">Whatsapp</a>
+      </p>
+      <p>
+        <img src="imagens/facebook2.png" alt="Facebook" class="icon"> 
+        <a href="https://web.facebook.com/profile.php?id=100086134631891" target="_blank">Facebook</a>
+      </p>
+      <p>
+        <img src="imagens/instagram2.png" alt="Instagram" class="icon"> 
+        <a href="https://www.instagram.com/brandao.luthieria" target="_blank">Instagram</a>
+      </p>
+    </div>
+    <div class="logo-contato">
+      <img src="imagens/logo-brandao.jpg" alt="Logo Brandão Luthieria">
     </div>
   </div>
+</div>
 
-  <!-- Barra inferior -->
-  <div class="footer-botao">
-    <p>&copy; 2025 Brandão Luthieria- Todos os direitos reservados</p>
-    <p>Desenvolvido por <a href="README.md">Bruce</a></p>
-  </div>
+<footer>
+  <p>&copy;Brandão Luthieria – Desenvolvido por <a href="https://github.com/Bruceamc" target="_blank">Bruce</a>.</p>
 </footer>
 
 </body>

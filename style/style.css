@@ -1,35 +1,45 @@
-/*
-rgb(230, 224, 208);
-rgb(89, 56, 27);
-*/
-  
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/*Configuração de fonte*/
+
+/**/
+
+
 html {
   font-size: 16px;
   scroll-behavior: smooth;
 }
 body {
-  line-height: 1.5;
   color: #333;
-  background-color: rgb(230, 224, 208);
+  background-color: #e5dfcf;
+  font-family: "Nunito", sans-serif;
+}
+/* marca */
+.marca {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.marca img {
+  width: 40%;
+  height: 250px;
+  object-fit: cover;
 }
 
 /* cabeca */
 .cabeca {
+  background-color: #57371e;
   width: 100%;
-  background-color: #2c2c2c;
-  padding: 1rem 2rem;
+  padding: 16px 32px;
+  box-shadow: 0 2px 6px #57371e;
   position: sticky;
   top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 .cabeca .itens_cabeca {
-  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -38,93 +48,67 @@ body {
 
 /* Logo */
 .logo {
+  color: #fff;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
   text-decoration: none;
+  font-size: 25px;
   font-weight: bold;
-  font-size: 1.3rem;
-  color: #d4a373;
-}
-.logo img {
-  height: 40px;
-  width: auto;
-  border-radius: 50%;
 }
 
 /* navegacao */
 .navegacao ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  font-size: 18px;
+  gap: 10px;
 }
 .navegacao ul li a {
-  text-decoration: none;
   color: #fff;
-  padding: 0.5rem 1rem;
+  text-decoration: none;
+  padding: 0.5rem 16px;
   border-radius: 8px;
   transition: all 0.3s ease;
 }
 .navegacao ul li a:hover {
   background-color: #d4a373;
-  color: #2c2c2c;
 }
 
 /* Botão do zap */
-.botao_zap {
+.botao_zap1 {
   background-color: #25D366;
-  color: #fff;
-  padding: 0.6rem 1rem;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
   border-radius: 25px;
-  font-weight: bold;
   text-decoration: none;
+  font-weight: bold;
   transition: all 0.3s ease;
+  gap: 5px;
 }
 
-.botao_zap:hover {
-  background-color: #1ebe57;
+.botao_zap1:hover {
+  background-color: #000000;
+  color: #25D366;
   transform: scale(1.05);
 }
 
-/*teste pra celular */
+.botao_zap1 img{
+  height: 15px;
+}
+
+/* Ajuste */
 .cel_teste {
   display: none;
-  font-size: 1.8rem;
-  color: #fff;
+  font-size: 32px;
   cursor: pointer;
 }
 
-/* teste de responsividade */
-@media (max-width: 768px) {
-  .navegacao {
-    display: none;
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    background: #2c2c2c;
-    border-radius: 8px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-  }
-
-  .navegacao ul {
-    flex-direction: column;
-    gap: 0;
-  }
-
-  .navegacao ul li a {
-    display: block;
-    padding: 1rem;
-  }
-
-  .cel_teste {
-    display: block;
-  }
-}
-    
 .inicio {
   background-color: #2c2c2c;
   color: #fff;
-  padding: 5rem 2rem;
+  padding: 80px 32px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -134,21 +118,21 @@ body {
 
 .inicio h1 {
   font-size: 2.2rem;
-  margin-bottom: 1rem;
-  line-height: 1.3;
+  margin-bottom: 16px;
+  font-family: "Playfair Display", serif;
 }
 
 .inicio p {
   font-size: 1.2rem;
-  margin-bottom: 2rem;
-  color: #dcd6d1;
+  margin-bottom: 32px;
+  color: #e5dfcf;
 }
 
 .inicio_caixas{
   display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 /* Botão de agendar atendimento) */
@@ -161,9 +145,8 @@ body {
   text-decoration: none;
   transition: all 0.3s ease;
 }
-
 .caixa_agendar:hover {
-  background-color: #fff;
+  background-color: #e5dfcf;
   color: #2c2c2c;
   transform: translateY(-2px);
 }
@@ -177,27 +160,31 @@ body {
   text-decoration: none;
   transition: all 0.3s ease;
 }
-
 .caixa_servicos:hover {
-  background-color: #d4a373;
+  background-color: #e5dfcf;
   color: #2c2c2c;
+  border: 2px solid #e5dfcf;
   transform: translateY(-2px);
+}
+.caixa_servico p{
+  font-size: 17px;
 }
 
 /* Sobre */
 .sobre {
-  background-color: #ffffff;
-  color: #2c2c2c;
-  padding: 5rem 2rem;
+  background-color: #e5dfcf;
+  color: #57371e;
+  padding: 80px 32px;
   text-align: center;
 }
 .sobre h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #d4a373;
+  font-size: 32px;
+  margin-bottom: 16px;
+  color: #57371e;
+  font-family: "Playfair Display", serif;
 }
 .sobre p {
-  font-size: 1.1rem;
+  font-size: 1.16px;
   line-height: 1.6;
   margin-bottom: 3rem;
   max-width: 700px;
@@ -206,13 +193,13 @@ body {
 }
 .sobre-caixas {
   display: flex;
-  gap: 2rem;
+  gap: 32px;
   justify-content: center;
   flex-wrap: wrap;
 }
 .sobre_caixa{
   background-color: #f5f2ef;
-  padding: 2rem;
+  padding: 32px;
   border-radius: 15px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0);
   max-width: 300px;
@@ -221,41 +208,43 @@ body {
 }
 .sobre_caixa:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 20px #57371e;
 }
 .sobre_caixa h3 {
-  color: #2c2c2c;
+  color: #57371e;
   margin-bottom: 0.5rem;
+  font-family: "Playfair Display", serif;
 }
 .sobre_caixa p {
-  color: #555;
+  color: #2c2c2c;
   font-size: 0.95rem;
   line-height: 1.5;
 }
 
 .servicos {
   background-color: #2c2c2c;
-  padding: 5rem 2rem;
+  padding: 80px 32px;
   text-align: center;
   color: #2c2c2c;
 }
 
 .servicos h2 {
-  font-size: 2rem;
+  font-size: 32px;
   margin-bottom: 3rem;
-  color: #d4a373;
+  color: #fff;
+  font-family: "Playfair Display", serif;
 }
 
 .servicos-caixas {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
+  gap: 32px;
   margin-bottom: 2.5rem;
 }
 
 .caixa_servico {
-  background-color: #f5f2ef;
-  padding: 2rem;
+  background-color: #e5dfcf;
+  padding: 32px;
   border-radius: 15px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0);
   text-align: left;
@@ -264,12 +253,14 @@ body {
 
 .caixa_servico:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
+  box-shadow: 0 10px 20px #e5dfcf;
 }
 
 .caixa_servico h3 {
   font-size: 1.2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
+  color: #57371e;
+  font-family: "Playfair Display", serif;
 }
 
 .caixa_servico ul {
@@ -281,85 +272,101 @@ body {
   margin-bottom: 0.6rem;
   padding-left: 1.2rem;
   position: relative;
-  color: #444;
+  color: #000000;
   font-size: 0.95rem;
   line-height: 1.4;
 }
 
 .caixa_servico ul li::before {
   content: "•";
-  color: #d4a373;
+  color: #57371e;
   font-weight: bold;
   position: absolute;
   left: 0;
 }
+/* Botão do zap */
+.botao_zap2 {
+  background-color: #25D366;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
 
-/*opa*/
+.botao_zap2:hover {
+  background-color: #fcfcfc;
+  color: #282828;
+}
+
 /* Seção de Atendimento */
 .atendimento {
-  background: #f8f8f8;
-  padding: 4rem 2rem;
+  background: #ffffff;
+  padding: 4rem 32px;
   border-radius: 12px;
   margin: 3rem auto;
   max-width: 1100px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
 
-.atendimento-container {
+.atendimento-caixas {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 32px;
   align-items: center;
   justify-content: space-between;
 }
 
 /* Bloco de informações */
-.atendimento-info {
+.info-atendimento {
   flex: 1;
   min-width: 300px;
 }
 
-.atendimento-info h2 {
+.info-atendimento h2 {
   font-size: 1.8rem;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
   color: #2c2c2c;
+  font-family: "Playfair Display", serif;
 }
 
-.atendimento-info p {
-  font-size: 1rem;
+.info-atendimento p {
+  font-size: 16px;
   margin: 0.4rem 0;
   color: #444;
 }
 
 /* Bloco CTA WhatsApp */
-.atendimento-cta {
+.contato-atendimento {
   flex: 1;
   min-width: 300px;
   background: linear-gradient(135deg, #25D366, #128C7E);
-  color: #fff;
-  padding: 2rem;
+  color: #000000;
+  padding: 32px;
   border-radius: 12px;
   text-align: center;
-  box-shadow: 0 6px 15px rgba(255, 0, 0, 0.2);
+  box-shadow: 0 6px 15px rgb(0, 0, 0);
 }
 
-.atendimento-cta h2 {
+.contato-atendimento h2 {
   font-size: 1.6rem;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
+  font-family: "Playfair Display", serif;
 }
 
-.atendimento-cta p {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
+.contato-atendimento p {
+  font-size: 1.16px;
+  margin-bottom: 16px;
 }
 
 /* Botão grande */
 .botao-zap-2 {
   display: inline-block;
-  background-color: #fff;
+  background-color: #282828;
   color: #25D366;
   font-weight: bold;
-  padding: 1rem 2rem;
+  padding: 16px 32px;
   border-radius: 30px;
   text-decoration: none;
   font-size: 1.2rem;
@@ -368,131 +375,213 @@ body {
 }
 
 .botao-zap-2:hover {
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   transform: scale(1.05);
 }
-
 /* Texto extra */
 .botao-contato p {
   margin: 0.3rem 0;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
-/* Footer geral */
-.footer {
-  background: #2c2c2c;
-  color: #fff;
-  padding: 3rem 2rem 1rem;
-  margin-top: 3rem;
+/**/
+.trabalho {
+  padding: 50px 20px;
+  background: #282828;
+  text-align: center;
 }
 
-.footer-caixa {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: space-between;
+.trabalho h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #e5dfcf;
+  font-family: "Playfair Display", serif;
+}
+
+.trabalho-blocos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+  gap: 25px;
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
 }
 
-/* Identidade */
-.footer-brand {
-  flex: 1;
-  min-width: 250px;
-}
-.footer-brand img {
-  width: 70px;
-  border-radius: 50%;
-  margin-bottom: 0.8rem;
-}
-.footer-brand h3 {
-  margin-bottom: 0.5rem;
-  color: #d4a373;
+.trabalho-bloco {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Links */
-.footer-nav {
-  flex: 1;
-  min-width: 200px;
+.trabalho-bloco:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px #d4a373;
 }
-.footer-nav h4 {
-  margin-bottom: 0.8rem;
-  color: #d4a373;
+
+.trabalho-bloco img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
-.footer-nav ul {
+
+.trabalho-bloco h3 {
+  margin: 15px 0 5px;
+  font-size: 1.3rem;
+  color: #222;
+  font-family: "Playfair Display", serif;
+}
+
+.trabalho-bloco p {
+  font-size: 0.95rem;
+  color: #2c2c2c;
+  padding: 0 15px 20px;
+}
+
+/**/
+.assinaturas {
+  padding: 50px 20px;
+  background: #e5dfcf;
+  text-align: center;
+}
+.assinaturas h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #222;
+  font-family: "Playfair Display", serif;
+}
+.caixas-assinaturas {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.assinatura {
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.48);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.assinatura:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgb(255, 255, 255);
+}
+.assinatura h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  font-family: "Playfair Display", serif;
+}
+.assinatura ul {
   list-style: none;
   padding: 0;
+  margin: 0 0 15px 0;
 }
-.footer-nav ul li {
-  margin: 0.4rem 0;
+.assinatura ul li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  line-height: 1.4;
 }
-.footer-nav ul li a {
-  color: #fff;
+/* Preço */
+.assinatura .destaque {
+  font-size: 16px;
+  margin: 5px 0;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.essencial{
+  background: linear-gradient(135deg, #8B4513, #dd7a34);
+}
+.premium{
+  background: linear-gradient(135deg, #DAA520, #ffc229);
+}
+.master{ 
+  background: linear-gradient(135deg, #800080, #ff02ff);
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .caixas-assinaturas {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*contato */
+.contato {
+  background-color: #282828;
+  padding: 30px;
+}
+
+.caixas-contato {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0% 10% 0% 10%;
+  gap: 30px;
+}
+
+/* Logo */
+.logo-contato img {
+  max-width: 200px;
+  border-radius: 20%;
+}
+
+/* Seções de contato e redes */
+.caixa-contato-2,
+.caixa-contato-1{
+  background-color: #e5dfcf;
+  padding: 10px;
+  border-radius: 5%;
+}
+
+.caixa-contato-1 h3,
+.caixa-contato-2 h3 {
+  margin-bottom: 10px;
+  color: #282828;
+  font-family: "Playfair Display", serif;
+}
+
+/* Ícones + texto */
+.caixa-contato-1 p,
+.caixa-contato-2 p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0;
+}
+
+.caixa-contato-2 a,
+.caixa-contato-1 a{
   text-decoration: none;
-  transition: color 0.3s;
-}
-.footer-nav ul li a:hover {
-  color: #d4a373;
+  color: #282828;
 }
 
-/* Contato */
-.footer-contato {
-  flex: 1;
-  min-width: 250px;
-}
-.footer-contato h4 {
-  margin-bottom: 0.8rem;
-  color: #d4a373;
-}
-.footer-contato p {
-  margin: 0.4rem 0;
-}
-.botao-zap-footer {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.6rem 1.2rem;
-  background: #25D366;
-  color: #fff;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-.botao-zap-footer:hover {
-  background: #128C7E;
+.icon {
+  width: 20px;
+  height: 20px;
 }
 
-/* Redes sociais */
-.footer-social {
-  flex: 1;
-  min-width: 200px;
-}
-.footer-social h4 {
-  margin-bottom: 0.8rem;
-  color: #d4a373;
-}
-.footer-social a img {
-  width: 30px;
-  margin-right: 0.8rem;
-  transition: transform 0.3s;
-}
-.footer-social a img:hover {
-  transform: scale(1.1);
+/* Responsivo */
+@media (max-width: 768px) {
+  .caixas-contato {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
-/* Barra inferior */
-.footer-botao {
+footer{
+  background-color: #222222;
+  color: #d4a373;
   text-align: center;
-  margin-top: 2rem;
-  border-top: 1px solid rgba(255,255,255,0.2);
-  padding-top: 1rem;
-  font-size: 0.9rem;
-  color: #ccc;
-}
-.footer-botao a {
-  color: #d4a373;
-  text-decoration: none;
-}
-.footer-botao a:hover {
-  text-decoration: underline;
+  padding: 15px;
 }
 
+footer a{
+  text-decoration: none;
+  color: #fff;
+}
